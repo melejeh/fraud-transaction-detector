@@ -85,5 +85,72 @@ The model therefore detected approximately **82% of fraudulent transactions in t
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/melejeh/fraud-transaction-detector.git
 cd fraud-transaction-detector
+### 2. Create a virtual environment
+
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+### 4. Download the dataset
+
+Download the **Credit Card Fraud Detection** dataset from Kaggle and place `creditcard.csv` inside the `data/` directory.
+
+The project structure should look like:
+
+```text
+fraud-transaction-detector/
+├── data/
+│   └── creditcard.csv
+├── images/
+│   ├── class_distribution.png
+│   ├── confusion_matrix.png
+│   └── model_comparison.png
+├── fraud_detection.py
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
+
+### 5. Run the model
+
+```bash
+python fraud_detection.py
+```
+
+## What I Learned
+
+Through this project, I gained hands-on experience with:
+
+- Building a supervised machine learning classification pipeline
+- Preparing data for model training
+- Creating stratified train/test splits
+- Standardizing numerical features
+- Training and comparing classification models
+- Understanding class imbalance
+- Evaluating models using precision, recall, F1-score, and confusion matrices
+- Visualizing machine learning results
+
+## Future Improvements
+
+Possible extensions include:
+
+- Cross-validation
+- Hyperparameter tuning
+- Precision-recall curve analysis
+- Handling class imbalance using resampling or class weighting
+- Comparing additional classification algorithms
+- Saving the trained model for use in an application
+
+## Author
+
+**Mel Ejeh**  
+Software Engineering, Western University
